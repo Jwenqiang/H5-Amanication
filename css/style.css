@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+	-webkit-overflow-scrolling: touch;
+	font-family: "fzhjt", "helvetica", "heiti SC", "droid", "sans";
+	margin: 0;
+	padding: 0;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder { /* WebKit browsers */ 
+
+color: #999; 
+
+} 
+
+input:-moz-placeholder,textarea::-webkit-input-placeholder { /* Mozilla Firefox 4 to 18 */ 
+
+color: #999;
+
+} 
+
+input::-moz-placeholder,textarea::-webkit-input-placeholder { /* Mozilla Firefox 19+ */ 
+
+color: #999;
+
+} 
+
+input:-ms-input-placeholder,textarea::-webkit-input-placeholder { /* Internet Explorer 10+ */ 
+
+color: #999; 
+
+}
+input:-internal-autofill-selected{background: none !important;}
+input,textarea{outline: medium;border: 0;}
+a
+{
+	text-decoration: none;
+	color: #666;
+}
+button
+{
+	outline: medium;
+	background: none;
+	border: none;
+}
+	
+.clear::after{
+	content: '';
+	display: block;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+	height: 0;
+}
+html {
+	font-size: 50px;
+	font-size: calc(100vw / 7.5);
+	height: 100vh;
+}
+
+body {
+	transition: transform 1s ease-in-out;
+	height: 100vh;
+	color: #000;
+	overflow-x: hidden;
+	font-family: "microsoft yahei", "helvetica", "heiti SC", "droid", "sans";
+	font-size: 0.28rem;
+}
+@media only screen and (min-width: 751px){
+	html{font-size: 90px;}
+}
+.warp{max-width: 750px;margin: 0 auto;overflow: hidden; position: relative;padding-bottom: 1rem;}
+.pc,
+.m {
+	display: none !important;
+}
+.top{position: relative;margin-bottom: 0.2rem;}
+.top img{display: block;}
+.list{padding: 0 0.2rem;}
+.list a{padding: 0.4rem 0;display: block;border-bottom: 1px solid #ddd;}
+.list a:first-child{padding-top: 0;}
+.list a:last-child{border-bottom: 0;}
+.lTop{position: relative;}
+.tip{position: absolute;top: 1.5rem;left: 0;width: 100%;text-align: center;color: #fff;}
+.tip h3{font-size: 0.5rem;font-weight: 500;}
+.tip p{font-size: 0.32rem;}
+.msg{padding: 0.2rem 0;line-height: 1.6;color: #666;font-size: 0.32rem;}
+.sbtn{width: 5rem;height: 0.8rem;display: block;margin: 0.2rem auto;border: 1px solid #ED5555;color: #ED5555;text-align: center;line-height: 0.8rem;font-size: 0.32rem;border-radius: 3px;}
