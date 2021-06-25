@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2020中原经纪人年终总结</title>
+    <meta name="viewport" content="width=device-width, viewport-fit=cover, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="contact" content="tel 13528462896 e-mail:632795201@qq.com"/>
+	
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="screen-orientation" content="portrait">
+	<meta name="full-screen" content="yes">
+	<meta name="browsermode" content="application">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="x5-page-mode" content="app">
+
+    <!-- <link rel="shortcut icon" href="images/favicon.ico"/> -->
+<!-- 引入样式 -->
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nutui/nutui@2.2.11/dist/nutui.min.css">
+    <!--lib css-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/jquery.fullPage.css"/>
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!--personal css-->
+    <link rel="stylesheet" href="css/index.css?v=86"/>
+	<script src="lib/jquery.min.js"></script>
+		<script src="https://m.sz.centanet.com/zt/js/jweixin-1.0.0.js"></script>
+		<script src="https://m.sz.centanet.com/zt/js/jweixin-for-share-jsonp.js" type="text/javascript"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/axios.js"></script>
+	<script>
+		var shareLink = window.location.href.split('#')[0];
+		var shareObj = { //微信链接分享
+			title: "深夜，客户问我睡了吗？",
+			desc: '致敬每一个努力生活的中原人，这里有你的2020大事记',
+			link: shareLink,
+			imgUrl: "https://sz.centanet.com/partner/house/shareImg/year.png"
+		};
+	</script>
+	<!-- gio跟踪 -->
+	<script>
+		! function(e, t, n, g, i) {
+			e[i] = e[i] || function() {
+				(e[i].q = e[i].q || []).push(arguments)
+			}, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' ==
+				document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag)
+		}(window, document, "script", "assets.giocdn.com/2.1/gio.js", "gio");
+		gio('init', 'a3737a846d019278', {});
+	
+		//custom page code begin here
+	
+		//custom page code end here
+	
+		gio('send');
+	</script>
+	<style>
+		html {
+			font-size: 50px;
+			font-size: calc(100vw / 7.5);
+			height: 100vh;
+		}
+		.box{max-width: 750px;margin: 0 auto;color: #fff;position: relative;}
+		.hide{height: 100vh;overflow: hidden;}
+		.load{width: 100%;height: 100%;position: fixed;top:0;left: 0;z-index: 100;background: #ef381d url(img/load.gif) center 40% no-repeat;background-size: 2rem;}
+		.load .pic{width: 100px;height: 100px;position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;font-size: 30px;text-align: center;line-height: 100px;}
+/* 		.loading .pic span{display: block;width: 80px;height: 80px;position: absolute;top: 10px;left: 10px;border-radius: 50%;box-shadow: 0 3px 0 #666;animation: rotate 1s infinite linear;-webkit-animation: rotate 1s infinite linear;
+		} */
+		.pic b{font-size: 0.38rem;color: #fff;font-weight: 500;padding-right: 0.1rem;}
+		@-webkit-keyframes rotate{
+			0%{-webkit-transform: rotate(0deg);}
+			100%{-webkit-transform: rotate(360deg);}
+		}
+		@keyframes rotate{
+			100%{transform: rotate(360deg);}
+		}
+		.animatedR{animation: rotate 3s infinite linear;}
+		#music{
+			transform-origin: center;
+			display: block;width: 0.8rem;height: 0.8rem;background: url(img/music.png) center no-repeat;background-size: 100%;position: absolute;right: 0.4rem;top: 0.3rem;z-index: 9;
+		}
+		.login{opacity: 0;}
+		.show{opacity: 1;}
+		.bj{width: 100vw;height: 100%;background-color: #000000;opacity: 0.5;position: fixed;left: 0;top: 0;z-index: 10;}
+		.loginC{position: fixed;width: 6.02rem;height: 7.6rem;background: #fff;z-index: 11;left: 0.74rem;top: -100vh;border-radius: 0.08rem;transition: all 0.8s ease;}
+		.show .loginC{top: 29%;}
+		.hbC{position: fixed;width: 6.02rem;z-index: 11;left: 0.74rem;top: -200vh;transition: all 0.8s ease;}
+		.show .hbC{top: 3%;}
+		.loginC .topImg{width: 100%;margin-top: -3.2rem;}
+		.close{position: absolute;right: 0.3rem;top: 0.3rem;width: 0.48rem;height: 0.48rem;display: inline-block;background: url(img/close.png) center no-repeat;background-size: 100%;opacity: 1;}
+		.topImg img{display: block;width: 6.05rem;margin-left: -1px;}
+		.form{padding: 0.5rem;}
+		.form .fInput{width: 100%;height: 0.8rem;background-color: #F0F5FA;padding-left: 0.2rem;margin-bottom: 0.2rem;}
+		.form .fInput label{color: #999;font-weight: 500;}
+		.form .fInput input{border: 0;background-color:#F0F5FA;height: 100%;width: 3rem;outline: medium;color: #000;}
+		.loginBtn{display: block;width: 100%;height: 0.8rem;line-height: 0.8rem;text-align: center;font-size: 0.36rem;color: #fff;border-radius: 0.08rem;
+background: linear-gradient(134deg, #FB6F52 0%, #F3240A 100%);margin-top: 0.8rem;}
+		.logo{
+			display: block;
+			position: absolute;
+			left: 0.4rem;
+			top: 0.4rem;
+			width: 2.4rem;
+			height:0.8rem;
+			background: url(img/logo.png?v=1) left top no-repeat;
+			background-size: 2.4rem;
+			z-index: 9;
+		}
+		.container{padding: 0;}
+		.share{
+			width: 1.5rem;
+			height: 0.6rem;
+			background: #fff url(img/icon-wx.png) 20% center no-repeat;
+			background-size: 0.42rem;
+			border: 0;
+			display: block;
+			line-height: 0.68rem;
+			text-align: center;
+			color: #333;
+			font-size: 0.28rem;
+			position: absolute;
+			bottom: 1.7rem;
+			right: 0.45rem;
+			padding-left: 0.48rem;
+			border-radius: 2px;
+			-webkit-animation: flash 4s 1s ease infinite;
+			animation: flash 4s 1s ease infinite;
+		}
+		.call{border-radius: 4px;}
+		a.phone{display: block;height: 0.846rem;position: absolute;width: 4.8rem;left: 0.8rem;bottom: -1.3rem;line-height: 0.846rem;background: url(img/btn.png) center no-repeat; background-size: 100%;font-size: 0.36rem;color: #333;border-radius: 4px;
+		opacity: 0;
+		animation: fadeIn 1s 1.5s ease forwards,tada 3s 2.5s linear infinite alternate;
+		font-family: "微软雅黑";
+		}
+		a.phone img{width: 0.4rem;margin-right: 0.1rem;}
+		.my{
+			opacity: 0;
+			position: absolute;
+			top: 16%;
+			right: 4%;
+			display: block;
+			width: 2.52rem;
+			height:1.12rem;
+			background: url(img/my.png) center no-repeat;
+			background-size: 2.52rem;
+			font-size: 0.32rem;
+			animation: fadeIn 2s 3s ease forwards,flash 6s 3.5s linear infinite alternate;
+		}
+		.mapNo{
+			position: relative;
+			width: 100%;
+			height: 6rem;
+			left: -0.4rem;
+			top: -1.4rem;
+		}
+		@media only screen and (min-width: 769px){
+			html{font-size: 80px;}
+			a.phone{bottom: 10%;}
+			.m{display: none;}
+			.pc{display: block;}
+		}
+		@media only screen and (max-width: 768px){
+			.m{display: block;}
+			.pc{display: none;}
+		}
+		@media only screen and (min-width: 400px){
+			.p4R1 .gm {
+			    left: 1.24rem;
+			    top: 2.36rem;
+			}
+			.p4R1 .lh {
+			    left: 2.01rem;
+			    top: 2.92rem;
+			}
+			.p4R1 .ns {
+			    left: 1.24rem;
+			    top:3.85rem;
+			}
+			.p4R1 .ft {
+			    left: 2.23rem;
+			    top: 4.12rem;
+			}
+			.p4R1 .lhu {
+			    left: 2.78rem;
+			    top:3.87rem;
+			}
+			.p4R1 .yt {
+			    left: 3.77rem;
+			    top: 3.68rem;
+			}
+			.p4R1 .ps {
+			    left: 4.24rem;
+			    top: 2.82rem;
+			}
+		}
+		@media only screen and (min-height: 740px){
+			img.woman{bottom: 8%;}
+			.p5R3{top: 82%;}
+			.p5R2{top: 49%;}
+			.p5R1{top: 38.5%;}
+			.p5R11{top: 50.5%;}
+			.show .hbC {
+			    top: 14%;
+			}
+			.p8R2{top: 80%;}
+			.p4R2{top: 79%;}
+			.p7B{top: 41%;}
+			.zList a{padding: 0 0.3rem;}
+			a.phone{bottom: -2rem;}
+			.my{top:19.5%}
+		}
+		@media (min-height: 740px)and (min-width:400px){
+			.p5R3 {
+			    top: 85%;
+			}
+			.p8R11{top: 31%;}
+		}
+		.showC{
+			    position: fixed;
+			    width: 8rem;
+			    height: 8rem;
+			    background: url(img/pc.png?v=1) center no-repeat;
+				background-size: 8rem;
+			    z-index: 11;
+			    left: 50%;
+			    top: 50%;
+			    transform: translate(-50%,-50%);
+		}
+/* 		.jt1{
+			width: 2.2rem;
+			    position: absolute;
+			    left: 0.6rem;
+			    top: 28%;
+			    opacity: 0;
+			    animation: bounceIn 2s 0.5s linear infinite alternate;
+		} */
+/* 		.jt2{
+			width: 1rem;
+			    position: absolute;
+			    left: 3.25rem;
+			    top: 70%;
+			    opacity: 0;
+			    animation: bounceIn 2s 0.5s linear infinite alternate;
+		} */
+		.hander{
+			width: 0.8rem;
+			position: absolute;
+			left: 4rem;
+			top: 49%;
+			opacity: 0;
+			animation: bounceIn 2s 0.5s linear infinite alternate;
+			z-index: 5;
+		}
+	</style>
+</head>
+<body>
+	<div id="box" class="box">
+		<div class="m">
+		<audio controls="controls" loop="loop" preload="preload" src="m.mp3" id="music1" hidden></audio>
+		<!-- <audio controls="controls" preload="preload" src="open.mp3" id="op" hidden></audio> -->
+		<audio controls="controls" preload="preload" src="yh.mp3" id="yh" hidden></audio>
+		<span id="music" @click="bf()"></span>
+		<div class="load">
+			<div class="pic">
+				<!-- <span></span> -->
+				<b>0%</b>
+			</div>
+		</div>
+	<!--导航栏-->
+	<!-- <nav class="navbar navbar-default resume">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand EngName" data-menuanchor="page1" href="#page1">Irving</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right" id="menu">
+					<li data-menuanchor="page2" class="active">
+						<a href="#page2">基本资料</a>
+					</li>
+					<li data-menuanchor="page3">
+						<a href="#page3">专业技能</a>
+					</li>
+					<li data-menuanchor="page4">
+						<a href="#page4">工作经历</a>
+					</li>
+					<li data-menuanchor="page5">
+						<a href="#page5">项目经验</a>
+					</li>
+					<li data-menuanchor="page6">
+						<a href="#page6">自我评价</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav> -->
+	<div id="resume">
+		<div class="section item-0" @touchmove="changeName">
+			<div class="container0">
+				<a href="#page1" class="opIn">
+					<div class="p0Bj" :class="open?'cBig':''" v-if="open">
+					</div>
+<!-- 					<div class="p0Bj1" :class="open?'cBig1':''" v-if="open">
+					</div> -->
+					<div :class="open?'b':''">
+						<img src="img/py1.png" class="py py1"/>
+						<img src="img/py2.png" class="py py2" />
+						<img src="img/py3.png" class="py py3" />
+					</div>
+					<img src="img/woman.png?v=6" class="man woman" :class="open?'cBig':''" v-if="sex==2"/>
+					<img src="img/man.png?v=5" class="man" :class="open?'cBig':''" v-else/>
+					<div class="p0T">
+						<p style="font-size: 0.6rem;font-weight: bold;">@{{nickName}}</p>
+						<p>这是你的2020中原大事记</p>
+					</div>
+				</a>
+				<a href="#page1" class="next-page op0" :class="open?'cFade':''" v-if="open">
+				    <span class="glyphicon"><img src="img/icon-down.png"/></span>
+				</a>
+				<!-- &&isMy -->
+				<div class="p0H" v-if="open==false&&isMy">
+					<p>
+						<input type="text" v-model="nickName" maxlength="5"/>
+					</p>
+				</div>
+				<!-- :class="open?'fBig':''" -->
+				<div class="hh" :class="open?'fBig':''" @click="changeName">
+<!-- 					<div class="jt1" v-if="open==false">
+						<img src="img/jt1.png" width="100%"/>
+					</div> -->
+<!-- 					<div class="jt2" v-if="open==false">
+						<img src="img/jt2.png" width="100%"/>
+					</div> -->
+					<div class="hander" v-if="open==false">
+						<img src="img/hander.png" width="100%"/>
+					</div>
+					<div class="door">
+						<div class="p0L" :class="open?'openLeft':''">
+							<img src="img/rom1.png" width="100%"/>
+						</div>
+						<div class="p0R" :class="open?'openRight':''">
+							<img src="img/rom2.png?v=2" width="100%"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section item-1" @touchstart="playV">
+			<label class="logo"></label>
+			<div class="row word p1Box">
+				<span class="p1-L0 resume-hide">
+					<img src="img/p1g.png" width="100%"/>
+				</span>
+				<span class="p1-L resume-hide">
+					<img src="img/p1d.png" width="100%"/>
+				</span>
+				<span class="p1-L1 p1-L11 resume-hide" v-if="sex==2">
+					<img src="img/p1p1.png" width="100%"/>
+				</span>
+				<span class="p1-L1 resume-hide" v-else>
+					<img src="img/p1p.png" width="100%"/>
+				</span>
+				<div class="p1-L2 resume-hide" style="text-align: right;">
+					<p style="font-size: 0.56rem;">{{mine.InCompanyDate}}</p>
+					<p>你加入中原大家庭</p>
+					<p>自此开始你的打拼之路</p>
+				</div>
+<!-- 				<div class="p1-L3 resume-hide">
+					<p>开启@{{nickName}}的2020打拼之旅</p>
+				</div> -->
+				<a href="#page2" class="next-page ">
+				    <span class="glyphicon"><img src="img/icon-down.png"/></span>
+				</a>
+			</div>
+
+		</div>
+		<div class="section item-2">
+			<label class="logo"></label>
+			<div class="container">
+				<div class="p2H">
+					<p>线上答疑，线下带看...</p>
+					<p v-if="isGl">辛苦你的团队，全年为<span>{{mine.FuWuRenShu}}人</span>提供置业咨询服务</p>
+					<p v-else>辛苦你了，全年为<span>{{mine.FuWuRenShu}}人</span>提供置业咨询服务</p>
+				</div>
+				<div class="p2L">
+					<img src="img/p2p.png" width="100%"/>
+				</div>
+				<div class="p2R p2R1" v-if="sex==2">
+					<img src="img/p2u1.png" width="100%"/>
+				</div>
+				<div class="p2R" v-else>
+					<img src="img/p2u.png" width="100%"/>
+				</div>
+				<a href="#page3" class="next-page ">
+				    <span class="glyphicon"><img src="img/icon-down.png"/></span>
+				</a>
+			</div>
+		</div>
+		<div class="section item-3" id="item-3">
+			<label class="logo"></label>
+			<div class="container">
+				<div class="p2H">
+					<p v-if="isGl">这事儿你的团队办的可真漂亮</p>
+					<p v-else>这事儿你办的可真漂亮</p>
+					<p v-if="isGl">你们帮助<span>{{mine.ChengJiaoCount}}个</span>家庭在深圳安家</p>
+					<p v-else>你和小伙伴帮助<span>{{mine.ChengJiaoCount}}个</span>家庭在深圳安家</p>
+				</div>
+				<div class="p3L p3L1" v-if="sex==2">
+					<img src="img/p3u1.png" width="100%"/>
+				</div>
+				<div class="p3L" v-else>
+					<img src="img/p3u.png" width="100%"/>
+				</div>
+				<div class="jt" v-if="zan==false">
+					<img src="img/jt.png?v=1" width="100%"/>
+				</div>
+				<div class="p3R" @click="cZan">
+					<img src="img/p3z.png" width="100%"/>
+					<img src="img/z1.png" class="z z1"/>
+					<img src="img/z2.png" class="z z2"/>
+					<img src="img/z3.png" class="z z3"/>
+					<img src="img/z4.png" class="z z4"/>
+					<img src="img/z5.png" class="z z5"/>
+					<img src="img/z6.png" class="z z6"/>
+					<img src="img/z7.png" class="z z7"/>
+				</div>
+				<div class="p3R1" :class="zan?'b':''" @click="cZan">
+					<img src="img/p3h.png" width="100%"/>
+					<img src="img/y1.png" class="yh yh1"/>
+					<img src="img/y2.png" class="yh yh2"/>
+					<img src="img/y3.png" class="yh yh3"/>
+				</div>
+				<a href="#page4" class="next-page ">
+				    <span class="glyphicon"><img src="img/icon-down.png"/></span>
+				</a>
+			</div>
+		</div>
+		<div class="section item-4" id="item-4">
+			<label class="logo"></label>
+			<div class="container">
+				<div class="p2H" style="font-size: 0.4rem;">
+					<template v-if="qyT">
+						<p style="line-height: 1.5;">{{qyT}}  话说，你现在算是行走的GPS吧</p>
+					</template>
+					<template v-else>
+						<template v-if="isGl">
+							<p style="margin-bottom: 0.1rem;">你的团队对负责的区域了如指掌</p>
+							<p>个个都称得上行走的GPS</p>
+						</template>
+						<template v-else>
+							<p style="margin-bottom: 0.1rem;">你对自己负责的区域了如指掌</p>
+							<p>说是行走的GPS也不为过吧</p>
+						</template>
+					</template>
+				</div>
+				<div class="p4L">
+					<img src="img/p4c.png" width="100%"/>
+				</div>
+				<div class="p4R" v-if="sex==2">
+					<img src="img/p4u1.png" width="100%"/>
+				</div>
+				<div class="p4R" v-else>
+					<img src="img/p4u.png" width="100%"/>
+				</div>
+				<div class="p4R1">
+					<div class="qyName"><label v-if="q1">{{q1}}</label><label v-if="q2">{{q2}}</label><label v-if="q3">{{q3}}</label><label v-if="q4">{{q4}}</label><label v-if="q5">{{q5}}</label><label v-if="q6">{{q6}}</label><label v-if="isGl==false">...</label> </div>
+					<div class="p4Map" :class="isGl||q1==''?'mapNo':''">	
+						<span class="ba"><img src="img/ba.png" width="100%" v-if="qy.indexOf('ba')<0"/><template v-else><img src="img/ba1.png" width="100%" class="qyD"/><img src="img/cicle.png" class="cicle"/></template></span>
+						<span class="gm"><img src="img/gm.png" width="100%" v-if="qy.indexOf('gm')<0"/><template v-else><img src="img/gm1.png" width="100%" class="qyD"/><img src="img/cicle.png" class="cicle"/></template></span>
+						<span class="ns"><img src="img/ns.png" width="100%" v-if="qy.indexOf('ns')<0"/><template v-else><img src="img/ns1.png" width="100%" class="qyD"/><img src="img/cicle.png" class="cicle"/></template></span>
+						<span class="lh"><img src="img/lh.png" width="100%" v-if="qy.indexOf('lh')<0"/><template v-else><img src="img/lh1.png" width="100%" class="qyD"/><img src="img/cicle.png" class="cicle"/></template></span>
+						<span class="ft"><img src="img/ft.png" width="100%" v-if="qy.indexOf('ft')<0"/><template v-else><img src="img/ft1.png" width="100%" class="qyD"/><img src="img/cicle.png" class="cicle"/></template></span>
+						<span class="lg"><img src="img/lg.png" width="100%" v-if="qy.indexOf('lg')<0"/><template v-else><img src="img/lg1.png" width="100%" class="qyD"/><img src="img/cicle.png" class="cicle"/></template></span>
+						<span class="lhu"><img src="img/lhu.png" width="100%" v-if="qy.indexOf('lhu')<0"/><template v-else><img src="img/lhu1.png" width="100%" class="qyD"/><img src="img/cicle.png" class="cicle"/></template></span>
+						<span class="ps"><img src="img/ps.png" width="100%" v-if="qy.indexOf('ps')<0"/><template v-else><img src="img/ps1.png" width="100%" class="qyD"/><img src="img/cicle.png" class="cicle"/></template></span>
+						<span class="yt"><img src="img/yt.png" width="100%" v-if="qy.indexOf('yt')<0"/><template v-else><img src="img/yt1.png" width="100%" class="qyD"/><img src="img/cicle.png" class="cicle"/></template></span>
+						<span class="dp"><img src="img/dp.png" width="100%" v-if="qy.indexOf('dp')<0"/><template v-else><img src="img/dp1.png" width="100%" class="qyD"/><img src="img/cicle.png" class="cicle"/></template></span>
+					</div>
+				</div>
+				<a href="#page5" class="next-page ">
+				    <span class="glyphicon"><img src="img/icon-down.png"/></span>
+				</a>
+
+			</div>
+		</div>
+		<div class="section item-5" id="item-5">
+			<label class="logo"></label>
+			<div class="container">
+				<div class="p2H">
+					<p v-if="isGl"><span>{{mine.ZuiWanCallDate}}</span>,你的团队成员陪客户聊到深夜<span>{{mine.ZuiWanCallTime}}</span>,不愧是中原的狼性团队</p>
+					<p v-else><span>{{mine.ZuiWanCallDate}}</span>,你陪客户聊到深夜<span>{{mine.ZuiWanCallTime}}</span>,上一次这么晚,还是在跟那个TA热恋期吧</p>
+				</div>
+				<div class="p5C">
+					<img src="img/p5c.png" width="100%"/>
+				</div>
+				<div class="p5L">
+					<img src="img/p5d.png" width="100%"/>
+				</div>
+				<div class="p5L1">
+					<img src="img/p5g.png" width="100%"/>
+				</div>
+				<div class="p5L2" v-if="sex==1">
+					<img src="img/p5zuo.png" width="100%"/>
+				</div>
+				<div class="p5R">
+					<img src="img/p5z.png" width="100%"/>
+					<label>{{mine.ZuiWanCallTime2}}</label> 
+				</div>
+				<div class="p5R3">
+					<img src="img/p5yin.png" width="100%"/>
+				</div>
+				<template v-if="sex==2">
+					<div class="p5R1 p5R11">
+						<img src="img/p5u1.png" width="100%"/>
+					</div>
+				</template>
+				<template v-else>
+					<div class="p5R1">
+						<img src="img/p5u.png" width="100%"/>
+					</div>
+					<div class="p5R2">
+						<img src="img/p5y.png" width="100%"/>
+					</div>
+				</template>
+				
+				<a href="#page6" class="next-page ">
+				    <span class="glyphicon"><img src="img/icon-down.png"/></span>
+				</a>
+
+			</div>
+		</div>
+		<div class="section item-6" id="item-6">
+			<label class="logo"></label>
+			<div class="container">
+				<div class="p2H">
+					<template v-if="isGl">
+						<p style="font-size: 0.46rem;margin-bottom: 0.16rem;">无论38℃的高温还是狂风暴雨</p>
+						<p style="font-size: 0.46rem;">带客户看房这事，你的团队从未爽约</p>
+					</template>
+					<template v-else>
+						<p v-if="mine.DaiKanTime"><span>{{mine.DaiKanTime}}</span>，你硬是顶着<span>{{mine.DaiKanWenDu}}</span>的高温桑拿带着客户到<span>{{lookHouse}}</span>小区看了个前前后后</p>
+						<template v-else>
+							<p style="font-size: 0.46rem;margin-bottom: 0.16rem;">无论38℃的高温还是狂风暴雨</p>
+							<p style="font-size: 0.46rem;">带客户看房这事，你从未爽约</p>
+						</template>
+					</template>
+				</div>
+				<div class="p6B">
+					<img src="img/p6h.png" width="100%"/>
+				</div>
+				<div class="p6L1">
+					<img src="img/p6s.png" width="100%"/>
+				</div>
+				<div class="p6L2 p6L21" v-if="sex==2">
+					<img src="img/p6l1.png" width="100%"/>
+					<img src="img/ll1.png" class="han ll1"/>
+					<img src="img/ll2.png" class="han ll2"/>
+					<img src="img/lr1.png" class="han lr1"/>
+					<img src="img/lr2.png" class="han lr2"/>
+					<img src="img/lr3.png" class="han lr3"/>
+				</div>
+				<div class="p6L2" v-else>
+					<img src="img/p6l.png" width="100%"/>
+					<img src="img/ll1.png" class="han ll1"/>
+					<img src="img/ll2.png" class="han ll2"/>
+					<img src="img/lr1.png" class="han lr1"/>
+					<img src="img/lr2.png" class="han lr2"/>
+					<img src="img/lr3.png" class="han lr3"/>
+				</div>
+				<div class="p6R">
+					<img src="img/p6r.png" width="100%"/>
+					<img src="img/rl1.png" class="han rl1"/>
+					<img src="img/rr1.png" class="han rr1"/>
+					<img src="img/rr2.png" class="han rr2"/>
+				</div>
+				<a href="#page7" class="next-page ">
+				    <span class="glyphicon"><img src="img/icon-down.png"/></span>
+				</a>
+			
+			</div>
+		</div>
+		<div class="section item-7" id="item-7">
+			<label class="logo"></label>
+			<div class="container">
+				<div class="p2H">
+					<p v-if="isGl">你的团队成员最高一天走了<span>{{mine.BuShuCountMax}}步</span>，全年<span>共{{Math.round(mine.BuShuCountAll/10000)}}万步</span></p>
+					<p v-else>你最高一天走了<span>{{mine.BuShuCountMax}}步</span>，全年<span>共{{Math.round(mine.BuShuCountAll/10000)}}万步</span></p>
+					<p>别不信！这足以绕深圳<span>{{mine.QuanCount}}圈</span></p>
+				</div>
+				<div class="p7B">
+					<img src="img/p7h1.png" width="100%"/>
+				</div>
+
+				<div class="p7L p7L1" v-if="sex==2">
+					<img src="img/p7u1.png" width="100%"/>
+				</div>
+				<div class="p7L" v-else>
+					<img src="img/p7u.png" width="100%"/>
+				</div>
+				
+				<a href="#page8" class="next-page ">
+				    <span class="glyphicon"><img src="img/icon-down.png"/></span>
+				</a>
+			
+			</div>
+		</div>
+		<div class="section item-8" id="item-8">
+			<label class="logo"></label>
+			<div class="container">
+				<div class="p8H">
+					<p class="p8t" v-if="isGl">2020年，你们打败了{{mine.DaBaiPercent}}%的经纪人</p>
+					<p class="p8t" v-else>2020年·你打败了{{mine.DaBaiPercent}}%的经纪人</p>
+				</div>
+				<div class="p2H p8H1">
+					<template v-if="isGl">
+						<p class="p8p">2020年，你的团队：</p>
+						<p class="p8p1">全年为<span>{{mine.FuWuRenShu}}人</span>提供置业咨询服务</p>
+						<p class="p8p2">帮助<span>{{mine.ChengJiaoCount ||0}}人</span>在深圳安了家</p>
+						<p class="p8p3">全年共步行<span>{{Math.round(mine.BuShuCountAll/10000)}}万步</span></p>
+						<p class="p8p4">......</p>
+					</template>
+					<template v-else>
+						<p class="p8p">2020年，你：</p>
+						<p class="p8p1">全年为<span>{{mine.FuWuRenShu}}人</span>提供置业咨询服务</p>
+						<p class="p8p2">帮助<span>{{mine.ChengJiaoCount ||0}}人</span>在深圳安了家</p>
+						<p class="p8p3">全年共步行<span>{{Math.round(mine.BuShuCountAll/10000)}}万步</span></p>
+						<p class="p8p4">......</p>
+					</template>
+				</div>
+				<div class="p8B">
+					<img src="img/p8h.png" width="100%"/>
+				</div>
+				<div class="p8R1">
+					<img src="img/p8g.png" width="100%"/>
+				</div>
+				<div class="p8R2">
+					<img src="img/p8yin.png" width="100%"/>
+				</div>
+				<div class="p8R p8R11" v-if="sex==2">
+					<img src="img/p8u1.png" width="100%"/>
+				</div>
+				<div class="p8R" v-else>
+					<img src="img/p8u.png" width="100%"/>
+				</div>
+				
+				<a href="#page9" class="next-page ">
+				    <span class="glyphicon"><img src="img/icon-down.png"/></span>
+				</a>
+			
+			</div>
+		</div>
+		<div class="section item-9" id="item-9">
+			<label class="logo"></label>
+			<div class="container" style="height: 100vh;">
+				<div class="p8H p9H">
+					<p>“2021”<span>拍了拍你</span></p>
+					<p>准备好了吗？</p>
+				</div>
+				<div class="p9c">
+					<p>请选择你要分享的海报</p>
+					<div class="lineBj"></div>
+					<div class="zList">
+						<a class="hb1" @click="setHb(7)" v-if="sex==2">
+							<img src="img/hb11.png" width="100%"/>
+						</a>
+						<a class="hb1" @click="setHb(1)" v-else>
+							<img src="img/hb1.png" width="100%"/>
+						</a>
+						<a class="hb2" @click="setHb(8)" v-if="sex==2">
+							<img src="img/hb21.png" width="100%"/>
+						</a>
+						<a class="hb2" @click="setHb(2)" v-else>
+							<img src="img/hb2.png" width="100%"/>
+						</a>
+						<a class="hb3" @click="setHb(9)" v-if="sex==2">
+							<img src="img/hb31.png" width="100%"/>
+						</a>
+						<a class="hb3" @click="setHb(3)" v-else>
+							<img src="img/hb3.png" width="100%"/>
+						</a>
+					</div>
+					<div class="lineBj"></div>
+					<div class="zList">
+						<a class="hb4" @click="setHb(10)" v-if="sex==2">
+							<img src="img/hb41.png" width="100%"/>
+						</a>
+						<a class="hb4" @click="setHb(4)" v-else>
+							<img src="img/hb4.png" width="100%"/>
+						</a>
+						<a class="hb5" @click="setHb(11)" v-if="sex==2">
+							<img src="img/hb51.png" width="100%"/>
+						</a>
+						<a class="hb5" @click="setHb(5)" v-else>
+							<img src="img/hb5.png" width="100%"/>
+						</a>
+						<a class="hb6" @click="setHb(12)" v-if="sex==2">
+							<img src="img/hb61.png" width="100%"/>
+						</a>
+						<a class="hb6" @click="setHb(6)" v-else>
+							<img src="img/hb6.png" width="100%"/>
+						</a>
+					</div>
+					<div class="call">
+						<a :href="'tel:'+jjrMobile" class="phone" @click="callP"><img src="img/phone.png"/>@{{nickName}}</a>
+					</div>
+				</div>
+				<label class="my" @click="goLogin"></label>
+			</div>
+		</div>
+	</div>
+	<div class="login" :class="login==false?'show':''">
+		<div class="bj" v-if="login" @click="closeH"></div>
+		<div class="loginC">
+			<label class="close" v-if="mine" style="top: 0;right: 0.2rem;" @click="login=false"></label>
+			<div class="topImg">
+				<img src="img/loginTop.png" width="100%"/>
+			</div>
+			<div class="form">
+				<div class="fInput">
+					<label>姓名：</label>
+					<input type="text" v-model="user.name"/>
+				</div>
+				<div class="fInput">
+					<label>工号：</label>
+					<input type="number" v-model="user.number"/>
+				</div>
+<!-- 				<div class="fInput">
+					<label>电话：</label>
+					<input type="tel" v-model="user.mobile"/>
+				</div> -->
+				<a class="loginBtn" @click="loginSub">你的2020中原大事记</a>
+			</div>
+		</div>
+	</div>
+	<div class="hb" :class="showHb?'show':''">
+		<div class="bj" @click="showHb=false" v-if="showHb"></div>
+		<div class="hbC">
+			<label class="close" @click="showHb=false"></label>
+			<img :src="hbImg" width="100%" v-if="hbImg"/>
+			<span class="share" @click="share(hbImg)" v-if="inApp">分享</span>
+			<label class="point" v-else></label>
+		</div>
+	</div>
+	</div>
+	<div class="pc">
+		<div class="pcShow">			<div class="bj" style="background-color: #99d7cc;opacity: 1;"></div>			<div class="showC">			</div>		</div>
+	</div>
+</div>
+<!-- 禁止代码泄露 -->
+	<!-- <script id='disable-devtool' src='https://cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js'></script> -->
+<script src="https://docs.growingio.com/v3/developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/websdk-apiv2"></script>
+<script src="lib/jquery.fullPage.min.js"></script>
+<script src="lib/jquery.easing.1.3.js"></script>
+<script src="lib/jquery.isotope.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- 引入NutUI组件库 -->
+<script src="https://cdn.jsdelivr.net/npm/@nutui/nutui@2.2.11/dist/nutui.min.js"></script>
+<script src="js/handler.js"></script>
+<script src="js/resumeEnter.js"></script>
+<script src="js/main.js?v=16"></script>
+	<script>
+		$(function () {
+			var img = $("img");//首先获取所有的Img对象
+			var num = 0;//定义一个变量，赋值给b标签用
+			var i=setInterval(()=>{
+				num=Number(num+ 3) 
+				$(".load b").html(num+"%");
+				if(num==99){
+					$(".load b").html("100%");
+					clearInterval(i);
+					setTimeout(()=>{
+						$(".load").fadeOut();
+					},500)
+				}
+			},10)
+			// img.each(function(i){//遍历获取到的所有img
+			// 	var oImg = new Image();//new一个新对象
+			// 	oImg.onload = function(){//使用onload方法，在加载完成后执行
+			// 		oImg.onload = null;//首先清除掉缓存
+			// 		num++;//每次加载的过程中num++，即执行次数
+			// 		$(".loading b").html(parseInt(num/$("img").size()*100)+"%");//改变b标签的内容，用num除以img的个数，再乘以100，再取整，这就是加载的百分数
+			// 		if(num >= i){
+			// 			$(".loading b").html("100%");
+			// 			setTimeout(()=>{
+			// 				$(".loading").fadeOut();//当num的值大于等于个数时隐藏
+			// 			},1000)
+						
+			// 		}
+			// 		}
+			// 		oImg.src = img[i].src;//预加载，先指定一个img.src，当onload成功以后可以将数据指定到某一个元素或者图片上，或者返回一个结果
+			// 	})
+			})
+	</script>
+	<script>
+		//百度跟踪代码
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?5ba699e44b8a99227ac7a04f91a66196";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</body>
+</html>
